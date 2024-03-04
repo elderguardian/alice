@@ -1,3 +1,3 @@
-const Index = require("./Config");
+const Config = require("./Config");
 
-module.exports = new Index(require('../../config.json'))
+module.exports = new Config(require('../../config.json'))
