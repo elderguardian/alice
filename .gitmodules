@@ -1,0 +1,3 @@
+[submodule "src/foundations/strawberry-di"]
+	path = src/foundations/strawberry-di
+	url = https://github.com/strberry/di.git
