@@ -1,10 +1,12 @@
 version: '3'
 services:
   webserver:
+    user: "www-data"
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - ./src:/var/www/html
+      - /home/luca/Documents/Programming/GitHub/elderguardian/alice/data:/alice
