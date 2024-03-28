@@ -9,4 +9,4 @@ services:
       - "8080:80"
     volumes:
       - ./src:/var/www/html
-      - /home/luca/Documents/Programming/GitHub/elderguardian/alice/data:/alice
+      - ./alice/data:/alice
