@@ -12,6 +12,8 @@ class KernelRepository
         if (!self::$kernel) {
             self::$kernel = new Kernel([
                 IRequest::class => new Request(),
+                IFileManager::class => new JsonFileManager(),
+                IFileMetadataFactory::class => new FileMetadataFactory(),
             ]);
         }
 
